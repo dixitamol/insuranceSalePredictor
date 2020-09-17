@@ -24,7 +24,7 @@ library(xlsx)
 read_data_DB = 0 
 if (read_data_DB == 1) { # read data from DB
   # First execute file ReadDataFromDB.R
-  source("C:\\Users\\Laura\\Desktop\\Caravan Insurance - R\\CODE\\ReadDataFromDB.R")
+  source("C:\\Users\\~\\Caravan Insurance - R\\CODE\\ReadDataFromDB.R")
   df_DBtrain <- fetch( dbSendQuery(con, 
                                  "SELECT * FROM tt_caravan_v1"), n=Inf)
   
@@ -40,9 +40,9 @@ if (read_data_DB == 1) { # read data from DB
   caravan_df_test <- df_DBtest
 
 } else { # load data from file
-	caravan_df_maindataset <- read.csv('C:\\Users\\Laura\\Desktop\\Caravan Insurance - R\\DATA\\TrainingData_V2.csv')
-	caravan_df_train <- read.csv('C:\\Users\\Laura\\Desktop\\Caravan Insurance - R\\DATA\\TrainingData_V2.csv')
-	caravan_df_test <- read.csv('C:\\Users\\Laura\\Desktop\\Caravan Insurance - R\\DATA\\TestData_V2 (comma).csv')
+	caravan_df_maindataset <- read.csv('C:\\Users\\~\\Desktop\\Caravan Insurance - R\\DATA\\TrainingData_V2.csv')
+	caravan_df_train <- read.csv('C:\\Users\\~\\Desktop\\Caravan Insurance - R\\DATA\\TrainingData_V2.csv')
+	caravan_df_test <- read.csv('C:\\Users\\~\\Desktop\\Caravan Insurance - R\\DATA\\TestData_V2 (comma).csv')
 	caravan_df_maindataset <- rename(caravan_df_maindataset,c(Number_of_mobile_home_policies="Purchase"))
 	caravan_df_train <- rename(caravan_df_train,c(Number_of_mobile_home_policies="Purchase"))
 	caravan_df_test <- rename(caravan_df_test,c(Number_of_mobile_home_policies="Purchase"))
