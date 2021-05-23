@@ -16,3 +16,5 @@ Second task was to derive information about the profile of a typical insurance b
 Challenges: Feature selection and extraction were very important. The data was noisy and supremely unbalanced. 
 
 The analysis, the critical arguments and conclusions contained in the deliverables were supported by evidence. The descriptions and interpretation were comprehensible, useful and actionable for a marketing professional with no prior knowledge of technical jargon. 
+
+++ (add CLV about the discussion and calculation)
